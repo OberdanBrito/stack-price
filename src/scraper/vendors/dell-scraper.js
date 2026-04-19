@@ -1,28 +1,12 @@
-const { chromium } = require('playwright');
-require('dotenv').config();
+const BaseScraper = require('../base-scraper');
 
-class DellScraper {
+/**
+ * Scraper específico para o site da Dell
+ */
+class DellScraper extends BaseScraper {
   constructor(options = {}) {
-    this.headless = options.headless !== false;
-    this.delayMs = parseInt(process.env.DELAY_MS || '3000');
-    this.timeoutMs = parseInt(process.env.TIMEOUT_MS || '30000');
-    this.browser = null;
-    this.context = null;
-  }
-
-  async init() {
-    this.browser = await chromium.launch({
-      headless: this.headless
-    });
-    this.context = await this.browser.newContext({
-      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.0'
-    });
-  }
-
-  async close() {
-    if (this.browser) {
-      await this.browser.close();
-    }
+    super(options);
+    this.vendorName = 'Dell';
   }
 
   async scrapeUrl(url, sku) {
@@ -65,18 +49,6 @@ class DellScraper {
     }
   }
 
-  async handleCookieConsent(page) {
-    try {
-      const consentButton = await page.$('button[data-testid="cookie-accept"]');
-      if (consentButton) {
-        await consentButton.click();
-        await page.waitForTimeout(1000);
-      }
-    } catch (e) {
-      // Ignora se não encontrar botão de cookies
-    }
-  }
-
   async waitForPriceContent(page) {
     const selectors = [
       '[data-testid="price"]',
@@ -116,13 +88,13 @@ class DellScraper {
           
           specElements.forEach(el => {
             const text = el.textContent.trim().toLowerCase();
-            if (text.includes('windows') || text.includes('ubuntu')) {
+            if (text.includes('windows') || text.includes('ubuntu') || text.includes('linux')) {
               specs.os = el.textContent.trim();
             }
             if (text.includes('gb') && text.includes('ddr')) {
               specs.memory = el.textContent.trim();
             }
-            if (text.includes('ssd') || text.includes('tb')) {
+            if (text.includes('ssd') || text.includes('tb') || text.includes('gb') && text.includes('storage')) {
               specs.storage = el.textContent.trim();
             }
           });
@@ -136,7 +108,7 @@ class DellScraper {
             const priceText = priceEl.textContent.trim();
             const priceMatch = priceText.match(/[\d.]+,?[\d]+/);
             if (priceMatch) {
-              specs.price = parseFloat(priceMatch[0].replace('.', '').replace(',', '.'));
+              specs.price = parseFloat(priceMatch[0].replace(/\./g, '').replace(',', '.'));
             }
           }
 
@@ -157,7 +129,7 @@ class DellScraper {
           const priceMatch = priceText.match(/[\d.]+,?[\d]+/);
           if (priceMatch) {
             results.push({
-              price: parseFloat(priceMatch[0].replace('.', '').replace(',', '.')),
+              price: parseFloat(priceMatch[0].replace(/\./g, '').replace(',', '.')),
               isMainPrice: true
             });
           }
@@ -168,10 +140,6 @@ class DellScraper {
     });
 
     return configs;
-  }
-
-  async delay() {
-    await new Promise(resolve => setTimeout(resolve, this.delayMs));
   }
 }
 

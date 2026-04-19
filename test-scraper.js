@@ -1,11 +1,11 @@
 /**
- * Script de teste do scraper Dell
+ * Script de teste multi-fabricante
  * Salva logs detalhados para análise antes de atualizar banco
  */
 
 const fs = require('fs');
 const path = require('path');
-const DellScraper = require('./src/scraper/dell-scraper');
+const ScraperFactory = require('./src/scraper/scraper-factory');
 const PriceExtractor = require('./src/scraper/price-extractor');
 
 const LOGS_DIR = path.join(__dirname, 'logs');
@@ -52,6 +52,7 @@ async function salvarLogs() {
 
 // Dados de teste - amostra representativa das URLs do SQL
 const TEST_DATA = [
+  // Dell
   {
     Sku: 'brpdc14250ubtohtrj_x',
     Fabricante: 'Dell',
@@ -78,31 +79,32 @@ const TEST_DATA = [
     UrlSpec: 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-14/spd/dell-dc14250-laptop',
     Preco: 6999.00
   },
+  // Lenovo
   {
-    Sku: 'cto07_pc14250_bccx2',
-    Fabricante: 'Dell',
-    Serie: 'Pro 14',
-    Processador: 'Intel Core 7-150U, 10 nucleos',
-    SistemaOperacional: 'Windows 11 Pro',
+    Sku: '82yu000lbr',
+    Fabricante: 'Lenovo',
+    Serie: 'V14 G3',
+    Processador: 'Intel Core i3-1315U',
+    SistemaOperacional: 'Windows 11 Home',
+    PlacaVideo: 'Intel UHD Graphics',
+    Memoria: '8 GB DDR5',
+    Armazenamento: '256 GB SSD',
+    Tela: '14.0" Full HD (1920x1080)',
+    UrlSpec: 'https://www.lenovo.com/br/pt/laptops/lenovo/v-series/Lenovo-V14-G3-IAP/p/82YU000LBR',
+    Preco: 3644.99
+  },
+  {
+    Sku: '21jq0006br',
+    Fabricante: 'Lenovo',
+    Serie: 'ThinkPad E14 G6',
+    Processador: 'Intel Core Ultra 5 225U',
+    SistemaOperacional: 'Windows 11 Home',
     PlacaVideo: 'Intel Graphics',
     Memoria: '16 GB DDR5',
     Armazenamento: '512 GB SSD',
-    Tela: '14.0" Full HD+ (1920x1200) IPS',
-    UrlSpec: 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto07_pc14250_bccx2',
-    Preco: 11298.00
-  },
-  {
-    Sku: 'brppv15250wbtohxgg_x',
-    Fabricante: 'Dell',
-    Serie: 'Pro 15 Essential',
-    Processador: 'Intel Core i7-1355U, 10 nucleos',
-    SistemaOperacional: 'Windows 11 Home',
-    PlacaVideo: 'Intel UHD Graphics',
-    Memoria: '16 GB DDR5',
-    Armazenamento: '1 TB SSD',
-    Tela: '15.6" Full HD (1920x1080) WVA',
-    UrlSpec: 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250wbtohxgg_x',
-    Preco: 9299.00
+    Tela: '14.0" WUXGA (1920x1200)',
+    UrlSpec: 'https://www.lenovo.com/br/pt/laptops/thinkpad/thinkpad-e-series/ThinkPad-E14-G6/p/21JQ0006BR',
+    Preco: 8954.99
   }
 ];
 
@@ -116,124 +118,157 @@ async function runTests(options = {}) {
 
   const sample = TEST_DATA.slice(0, sampleSize);
   
-  log('=== TESTE DO SCRAPER DELL ===\n');
+  log('=== TESTE MULTI-FABRICANTE ===\n');
   log(`Amostra: ${sample.length} SKUs`);
+  log(`Fabricantes: ${[...new Set(sample.map(s => s.Fabricante))].join(', ')}`);
+  log(`Suportados: ${ScraperFactory.listSupported().join(', ')}`);
   log(`Salvar HTML: ${saveHtml ? 'Sim' : 'Não'}`);
   log(`Salvar Screenshots: ${saveScreenshots ? 'Sim' : 'Não'}`);
   log(`Modo headed: ${headed ? 'Sim' : 'Não'}\n`);
 
-  const scraper = new DellScraper({ headless: !headed });
-  await scraper.init();
-
   results.total = sample.length;
 
-  for (let i = 0; i < sample.length; i++) {
-    const modelo = sample[i];
-    const progresso = `[${i + 1}/${sample.length}]`;
-    
-    log(`${progresso} Testando ${modelo.Sku}`);
-    log(`   URL: ${modelo.UrlSpec}`);
-    log(`   Preço atual no BD: R$ ${modelo.Preco?.toFixed(2) || 'N/A'}`);
-
-    const resultado = {
-      sku: modelo.Sku,
-      url: modelo.UrlSpec,
-      timestamp: new Date().toISOString(),
-      dadosBanco: {
-        os: modelo.SistemaOperacional,
-        memoria: modelo.Memoria,
-        armazenamento: modelo.Armazenamento,
-        precoAtual: modelo.Preco
-      }
-    };
-
-    try {
-      const scrapeResult = await scraper.scrapeUrl(modelo.UrlSpec, modelo.Sku);
-      
-      if (scrapeResult.error) {
-        log(`   ❌ Erro no scraping: ${scrapeResult.error}`);
-        resultado.status = 'erro';
-        resultado.erro = scrapeResult.error;
-        results.erro++;
-        results.detalhes.push(resultado);
-        continue;
-      }
-
-      log(`   ✅ Página carregada`);
-      log(`   Configurações encontradas: ${scrapeResult.configs.length}`);
-
-      // Salvar HTML para análise
-      if (saveHtml && scrapeResult.html) {
-        const htmlFile = path.join(HTML_DIR, `${modelo.Sku}-${timestamp}.html`);
-        fs.writeFileSync(htmlFile, scrapeResult.html);
-        resultado.htmlFile = htmlFile;
-      }
-
-      // Salvar screenshot para análise visual - reutiliza o HTML já salvo
-      if (saveScreenshots && scrapeResult.html) {
-        const page = await scraper.context.newPage();
-        await page.setContent(scrapeResult.html, { waitUntil: 'domcontentloaded' });
-        await page.waitForTimeout(3000);
-        const screenshotFile = path.join(SCREENSHOTS_DIR, `${modelo.Sku}-${timestamp}.png`);
-        await page.screenshot({ fullPage: true, path: screenshotFile });
-        await page.close();
-        resultado.screenshotFile = screenshotFile;
-        log(`   📸 Screenshot salvo`);
-      }
-
-      // Detalhes das configurações encontradas
-      if (scrapeResult.configs.length > 0) {
-        log(`   Configurações na página:`);
-        scrapeResult.configs.forEach((config, idx) => {
-          log(`     [${idx + 1}] Preço: R$ ${config.price?.toFixed(2) || 'N/A'}, OS: ${config.os || 'N/A'}, RAM: ${config.memory || 'N/A'}, Storage: ${config.storage || 'N/A'}`);
-        });
-      }
-
-      resultado.configsEncontradas = scrapeResult.configs;
-
-      // Tentar matching
-      const precoMatch = PriceExtractor.matchConfigToSku(scrapeResult.configs, modelo);
-      
-      if (precoMatch !== null) {
-        log(`   💰 Preço match: R$ ${precoMatch.toFixed(2)}`);
-        resultado.precoMatch = precoMatch;
-        resultado.status = 'preco_encontrado';
-        results.precoEncontrado++;
-        
-        const diferenca = precoMatch - (modelo.Preco || 0);
-        if (Math.abs(diferenca) > 0.01) {
-          log(`   ⚠️  Diferença de preço: R$ ${diferenca.toFixed(2)}`);
-          resultado.diferenca = diferenca;
-        }
-      } else {
-        log(`   ⚠️  Preço não encontrado para este SKU`);
-        resultado.status = 'preco_nao_encontrado';
-        results.precoNaoEncontrado++;
-      }
-
-      resultado.status = resultado.status || 'sucesso';
-      results.sucesso++;
-
-    } catch (error) {
-      log(`   ❌ Erro inesperado: ${error.message}`);
-      resultado.status = 'erro';
-      resultado.erro = error.message;
-      resultado.stack = error.stack;
-      results.erro++;
+  // Agrupar por fabricante
+  const porFabricante = {};
+  for (const modelo of sample) {
+    if (!porFabricante[modelo.Fabricante]) {
+      porFabricante[modelo.Fabricante] = [];
     }
+    porFabricante[modelo.Fabricante].push(modelo);
+  }
 
-    results.detalhes.push(resultado);
-
-    // Delay entre requisições
-    if (i < sample.length - 1) {
-      log(`   ⏱️  Aguardando 3s...\n`);
-      await scraper.delay();
-    } else {
-      log('');
+  // Criar scrapers por fabricante
+  const scrapers = {};
+  for (const fabricante of Object.keys(porFabricante)) {
+    if (!ScraperFactory.isSupported(fabricante)) {
+      log(`⚠️  Fabricante "${fabricante}" não suportado. Pulando.`);
+      continue;
+    }
+    try {
+      scrapers[fabricante] = ScraperFactory.create(fabricante, { headless: !headed });
+      await scrapers[fabricante].init();
+      log(`✅ Scraper ${fabricante} inicializado`);
+    } catch (error) {
+      log(`❌ Erro ao criar scraper ${fabricante}: ${error.message}`);
     }
   }
 
-  await scraper.close();
+  let processados = 0;
+
+  for (const [fabricante, modelosFab] of Object.entries(porFabricante)) {
+    const scraper = scrapers[fabricante];
+    if (!scraper) {
+      for (const modelo of modelosFab) {
+        results.erro++;
+        results.detalhes.push({
+          sku: modelo.Sku,
+          fabricante,
+          status: 'scraper_nao_disponivel'
+        });
+      }
+      continue;
+    }
+
+    log(`\n[${fabricante}] Testando ${modelosFab.length} modelo(s)...`);
+
+    for (let i = 0; i < modelosFab.length; i++) {
+      const modelo = modelosFab[i];
+      processados++;
+      const progresso = `[${processados}/${sample.length}]`;
+      
+      log(`${progresso} ${modelo.Sku} (${fabricante})`);
+      log(`   URL: ${modelo.UrlSpec}`);
+      log(`   Preço BD: R$ ${modelo.Preco?.toFixed(2) || 'N/A'}`);
+
+      const resultado = {
+        sku: modelo.Sku,
+        fabricante,
+        url: modelo.UrlSpec,
+        timestamp: new Date().toISOString(),
+        dadosBanco: {
+          os: modelo.SistemaOperacional,
+          memoria: modelo.Memoria,
+          armazenamento: modelo.Armazenamento,
+          precoAtual: modelo.Preco
+        }
+      };
+
+      try {
+        const scrapeResult = await scraper.scrapeUrl(modelo.UrlSpec, modelo.Sku);
+        
+        if (scrapeResult.error) {
+          log(`   ❌ Erro: ${scrapeResult.error}`);
+          resultado.status = 'erro';
+          resultado.erro = scrapeResult.error;
+          results.erro++;
+          results.detalhes.push(resultado);
+          continue;
+        }
+
+        log(`   ✅ Página carregada | Configs: ${scrapeResult.configs.length}`);
+
+        if (saveHtml && scrapeResult.html) {
+          const htmlFile = path.join(HTML_DIR, `${modelo.Sku}-${timestamp}.html`);
+          fs.writeFileSync(htmlFile, scrapeResult.html);
+          resultado.htmlFile = htmlFile;
+        }
+
+        if (saveScreenshots && scrapeResult.html) {
+          const page = await scraper.context.newPage();
+          await page.setContent(scrapeResult.html, { waitUntil: 'domcontentloaded' });
+          await page.waitForTimeout(3000);
+          const screenshotFile = path.join(SCREENSHOTS_DIR, `${modelo.Sku}-${timestamp}.png`);
+          await page.screenshot({ fullPage: true, path: screenshotFile });
+          await page.close();
+          resultado.screenshotFile = screenshotFile;
+          log(`   📸 Screenshot`);
+        }
+
+        if (scrapeResult.configs.length > 0) {
+          scrapeResult.configs.forEach((config, idx) => {
+            log(`     [${idx + 1}] R$ ${config.price?.toFixed(2) || 'N/A'}`);
+          });
+        }
+
+        resultado.configsEncontradas = scrapeResult.configs;
+
+        const precoMatch = PriceExtractor.matchConfigToSku(scrapeResult.configs, modelo);
+        
+        if (precoMatch !== null) {
+          log(`   💰 Match: R$ ${precoMatch.toFixed(2)}`);
+          resultado.precoMatch = precoMatch;
+          resultado.status = 'preco_encontrado';
+          results.precoEncontrado++;
+          
+          const diferenca = precoMatch - (modelo.Preco || 0);
+          if (Math.abs(diferenca) > 0.01) {
+            log(`   ⚠️  Diferença: R$ ${diferenca.toFixed(2)}`);
+            resultado.diferenca = diferenca;
+          }
+        } else {
+          log(`   ⚠️  Preço não encontrado`);
+          resultado.status = 'preco_nao_encontrado';
+          results.precoNaoEncontrado++;
+        }
+
+        results.sucesso++;
+
+      } catch (error) {
+        log(`   ❌ Erro: ${error.message}`);
+        resultado.status = 'erro';
+        resultado.erro = error.message;
+        results.erro++;
+      }
+
+      results.detalhes.push(resultado);
+
+      if (i < modelosFab.length - 1) {
+        await scraper.delay();
+      }
+    }
+
+    await scraper.close();
+  }
 
   // Resumo
   log('=== RESUMO DO TESTE ===');

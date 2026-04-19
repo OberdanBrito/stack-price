@@ -1,15 +1,17 @@
 const { Command } = require('commander');
+const ScraperFactory = require('./scraper/scraper-factory');
 
 const program = new Command();
+const suportados = ScraperFactory.listSupported().join(', ');
 
 program
-  .name('dell-scraper')
-  .description('Scraper de preços Dell para ModeloNotebook')
+  .name('stack-price')
+  .description(`Scraper multi-fabricante para atualização de preços\nSuportados: ${suportados}`)
   .version('1.0.0');
 
 program
-  .option('--all', 'Processar todos os SKUs com URL')
-  .option('--fabricante <nome>', 'Filtrar por fabricante (ex: Dell)')
+  .option('--all', 'Processar todos os SKUs com URL (todos os fabricantes)')
+  .option('--fabricante <nome>', `Filtrar por fabricante (${suportados})`)
   .option('--sku <sku>', 'Processar SKU específico')
   .option('--dry-run', 'Simular execução sem atualizar banco')
   .option('--headed', 'Executar navegador em modo visível (não headless)')

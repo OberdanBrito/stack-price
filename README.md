@@ -1,6 +1,12 @@
-# Scraper de Preços Dell
+# Stack Price - Scraper Multi-Fabricante
 
-Sistema Node.js para atualização automática de preços de notebooks da Dell.
+Sistema Node.js para atualização automática de preços de notebooks (Dell, Lenovo, etc.).
+
+## Fabricantes Suportados
+
+- **Dell** ✅
+- **Lenovo** ✅
+- HP, Asus, Acer (fácil extensão)
 
 ## Instalação
 
@@ -12,49 +18,65 @@ npx playwright install chromium
 
 ## Configuração
 
-Copie `.env.example` para `.env` e configure:
-
 ```bash
 cp .env.example .env
+# Edite .env com credenciais SQL Server
 ```
-
-Edite `.env` com suas credenciais SQL Server.
 
 ## Uso
 
 ```bash
-# Ver estatísticas do banco
+# Estatísticas
 node index.js --stats
 
-# Processar todos os SKUs (dry-run primeiro)
+# Todos os fabricantes (dry-run primeiro)
 node index.js --all --dry-run
-
-# Executar atualização real
 node index.js --all
 
 # Por fabricante
 node index.js --fabricante Dell
+node index.js --fabricante Lenovo
 
 # SKU específico
 node index.js --sku cto07_pc14250_bccx2
 
-# Com navegador visível (debug)
-node index.js --sku cto07_pc14250_bccx2 --headed
+# Debug (navegador visível)
+node index.js --sku 82yu000lbr --headed
 ```
 
-## Funcionamento
+## Arquitetura
 
-1. Consulta SKUs com `UrlSpec` no banco
-2. Navega para cada URL usando Playwright
-3. Extrai múltiplas configurações/preços da página
-4. Faz match entre specs da página e dados do SKU
-5. Atualiza `ModeloNotebook.Preco`
-6. Trigger SQL popula `ModeloNotebookPrecoHistorico` automaticamente
+- **Factory Pattern**: `ScraperFactory` instancia scraper por fabricante
+- **Base Scraper**: Interface comum com métodos genéricos
+- **Vendors**: Implementações específicas em `src/scraper/vendors/`
 
 ## Estrutura
 
-- `index.js` - Entry point e orquestração
-- `src/scraper/dell-scraper.js` - Playwright para Dell
-- `src/scraper/price-extractor.js` - Parser e matching de preços
-- `src/models/modelo-notebook.js` - Acesso SQL Server
-- `config/database.js` - Conexão com banco
+```
+src/scraper/
+├── base-scraper.js         # Classe abstrata
+├── scraper-factory.js      # Factory multi-fabricante
+├── price-extractor.js      # Matching de preços
+└── vendors/
+    ├── dell-scraper.js     # Implementação Dell
+    └── lenovo-scraper.js   # Implementação Lenovo
+```
+
+## Adicionar Novo Fabricante
+
+1. Criar `src/scraper/vendors/{fabricante}-scraper.js`
+2. Estender `BaseScraper`
+3. Implementar `scrapeUrl()`
+4. Registrar em `scraper-factory.js`
+
+Exemplo:
+```javascript
+const BaseScraper = require('../base-scraper');
+
+class HPScraper extends BaseScraper {
+  async scrapeUrl(url, sku) {
+    // Implementação específica HP
+  }
+}
+module.exports = HPScraper;
+```

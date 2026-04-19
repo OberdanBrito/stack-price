@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const program = require('./src/cli');
-const DellScraper = require('./src/scraper/dell-scraper');
+const ScraperFactory = require('./src/scraper/scraper-factory');
 const PriceExtractor = require('./src/scraper/price-extractor');
 const modeloNotebook = require('./src/models/modelo-notebook');
 const { closeConnection } = require('./config/database');
@@ -68,89 +68,131 @@ async function main() {
     }
 
     console.log(`\nProcessando ${modelos.length} modelo(s)...\n`);
+    console.log(`Fabricantes: ${[...new Set(modelos.map(m => m.Fabricante))].join(', ')}`);
+    console.log(`Scrapers suportados: ${ScraperFactory.listSupported().join(', ')}\n`);
 
-    const scraper = new DellScraper({
-      headless: !options.headed
-    });
-    
-    await scraper.init();
+    // Agrupar modelos por fabricante
+    const modelosPorFabricante = {};
+    for (const modelo of modelos) {
+      if (!modelosPorFabricante[modelo.Fabricante]) {
+        modelosPorFabricante[modelo.Fabricante] = [];
+      }
+      modelosPorFabricante[modelo.Fabricante].push(modelo);
+    }
+
+    // Criar scrapers por fabricante
+    const scrapers = {};
+    for (const fabricante of Object.keys(modelosPorFabricante)) {
+      if (!ScraperFactory.isSupported(fabricante)) {
+        console.log(`⚠️  Fabricante "${fabricante}" não tem scraper implementado. Pulando ${modelosPorFabricante[fabricante].length} modelo(s).`);
+        continue;
+      }
+      try {
+        scrapers[fabricante] = ScraperFactory.create(fabricante, { headless: !options.headed });
+        await scrapers[fabricante].init();
+        console.log(`✅ Scraper para ${fabricante} inicializado`);
+      } catch (error) {
+        console.log(`❌ Erro ao inicializar scraper ${fabricante}: ${error.message}`);
+      }
+    }
 
     const resultados = {
       sucesso: 0,
       erro: 0,
       atualizados: 0,
+      pulados: 0,
       detalhes: []
     };
 
-    for (let i = 0; i < modelos.length; i++) {
-      const modelo = modelos[i];
-      const progresso = `[${i + 1}/${modelos.length}]`;
-      
-      console.log(`${progresso} Processando ${modelo.Sku}...`);
+    let processados = 0;
+    const total = modelos.length;
 
-      try {
-        const resultado = await scraper.scrapeUrl(modelo.UrlSpec, modelo.Sku);
+    for (const [fabricante, modelosFab] of Object.entries(modelosPorFabricante)) {
+      const scraper = scrapers[fabricante];
+      if (!scraper) {
+        resultados.pulados += modelosFab.length;
+        for (const modelo of modelosFab) {
+          resultados.detalhes.push({ sku: modelo.Sku, status: 'scraper_nao_disponivel', fabricante });
+        }
+        continue;
+      }
+
+      console.log(`\n[${fabricante}] Processando ${modelosFab.length} modelo(s)...`);
+
+      for (let i = 0; i < modelosFab.length; i++) {
+        const modelo = modelosFab[i];
+        processados++;
+        const progresso = `[${processados}/${total}]`;
         
-        if (resultado.error) {
-          console.log(`  ❌ Erro: ${resultado.error}`);
-          resultados.erro++;
-          resultados.detalhes.push({ sku: modelo.Sku, status: 'erro', error: resultado.error });
-          continue;
-        }
+        console.log(`${progresso} ${modelo.Sku} (${fabricante})`);
 
-        const precoEncontrado = PriceExtractor.matchConfigToSku(
-          resultado.configs, 
-          modelo
-        );
-
-        if (precoEncontrado === null) {
-          console.log(`  ⚠️  Preço não encontrado na página`);
-          resultados.detalhes.push({ sku: modelo.Sku, status: 'preco_nao_encontrado' });
-          continue;
-        }
-
-        console.log(`  💰 Preço encontrado: R$ ${precoEncontrado.toFixed(2)}`);
-        console.log(`     Preço atual: R$ ${modelo.Preco ? modelo.Preco.toFixed(2) : 'N/A'}`);
-
-        if (!options.dryRun) {
-          const atualizado = await modeloNotebook.updatePreco(modelo.Sku, precoEncontrado);
-          if (atualizado) {
-            console.log(`  ✅ Preço atualizado no banco`);
-            resultados.atualizados++;
-          } else {
-            console.log(`  ⚠️  Nenhuma linha atualizada`);
+        try {
+          const resultado = await scraper.scrapeUrl(modelo.UrlSpec, modelo.Sku);
+          
+          if (resultado.error) {
+            console.log(`  ❌ Erro: ${resultado.error}`);
+            resultados.erro++;
+            resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'erro', error: resultado.error });
+            continue;
           }
-        } else {
-          console.log(`  🔄 [DRY-RUN] Preço seria atualizado: R$ ${precoEncontrado.toFixed(2)}`);
+
+          const precoEncontrado = PriceExtractor.matchConfigToSku(
+            resultado.configs, 
+            modelo
+          );
+
+          if (precoEncontrado === null) {
+            console.log(`  ⚠️  Preço não encontrado na página`);
+            resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'preco_nao_encontrado' });
+            continue;
+          }
+
+          console.log(`  💰 Preço: R$ ${precoEncontrado.toFixed(2)} (atual: R$ ${modelo.Preco ? modelo.Preco.toFixed(2) : 'N/A'})`);
+
+          if (!options.dryRun) {
+            const atualizado = await modeloNotebook.updatePreco(modelo.Sku, precoEncontrado);
+            if (atualizado) {
+              console.log(`  ✅ Atualizado`);
+              resultados.atualizados++;
+            } else {
+              console.log(`  ⚠️  Sem alteração`);
+            }
+          } else {
+            console.log(`  🔄 [DRY-RUN]`);
+          }
+
+          resultados.sucesso++;
+          resultados.detalhes.push({ 
+            sku: modelo.Sku, 
+            fabricante,
+            status: 'sucesso', 
+            precoNovo: precoEncontrado,
+            precoAntigo: modelo.Preco 
+          });
+
+        } catch (error) {
+          console.log(`  ❌ Erro: ${error.message}`);
+          resultados.erro++;
+          resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'erro', error: error.message });
         }
 
-        resultados.sucesso++;
-        resultados.detalhes.push({ 
-          sku: modelo.Sku, 
-          status: 'sucesso', 
-          precoNovo: precoEncontrado,
-          precoAntigo: modelo.Preco 
-        });
-
-      } catch (error) {
-        console.log(`  ❌ Erro inesperado: ${error.message}`);
-        resultados.erro++;
-        resultados.detalhes.push({ sku: modelo.Sku, status: 'erro', error: error.message });
+        // Delay entre requisições
+        if (i < modelosFab.length - 1 || Object.keys(modelosPorFabricante).indexOf(fabricante) < Object.keys(modelosPorFabricante).length - 1) {
+          await scraper.delay();
+        }
       }
 
-      // Delay entre requisições
-      if (i < modelos.length - 1) {
-        await scraper.delay();
-      }
+      await scraper.close();
     }
-
-    await scraper.close();
 
     // Resumo
     console.log('\n=== RESUMO ===');
-    console.log(`Total processado: ${modelos.length}`);
+    console.log(`Total: ${modelos.length}`);
     console.log(`Sucesso: ${resultados.sucesso}`);
     console.log(`Erros: ${resultados.erro}`);
+    if (resultados.pulados > 0) {
+      console.log(`Pulados (sem scraper): ${resultados.pulados}`);
+    }
     if (!options.dryRun) {
       console.log(`Atualizados no banco: ${resultados.atualizados}`);
     } else {
