@@ -1,0 +1,1518 @@
+# Catálogo de Modelos de Notebooks
+
+Documentação dos modelos de notebooks catalogados para o sistema de dimensionamento de hardware.
+
+---
+
+## Dell
+
+---
+
+### Notebook Dell 14
+
+**Modelo:** DC14250 (SKU Dell brpdc14250*)  
+**Fabricante:** Dell  
+**Série:** Notebook 14
+
+#### Configuração 1 – R$ 6.698,00 (brpdc14250ubtohtrj_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc14250ubtohtrj_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 22.04 LTS |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc14250ubtohtrj_x', 'Dell', 'Notebook 14', 'Intel Core 7-150U, 10 nucleos', 'Ubuntu Linux 22.04 LTS', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-14/spd/dell-dc14250-laptop', 6698.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 6.999,00 (brpdc14250hbtohtrj_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc14250hbtohtrj_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc14250hbtohtrj_x', 'Dell', 'Notebook 14', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Home', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-14/spd/dell-dc14250-laptop', 6999.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 7.399,00 (brpdc14250pbtohtrj_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc14250pbtohtrj_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc14250pbtohtrj_x', 'Dell', 'Notebook 14', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-14/spd/dell-dc14250-laptop', 7399.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 7.898,00 (brpdc14250pbtohtrk_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc14250pbtohtrk_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc14250pbtohtrk_x', 'Dell', 'Notebook 14', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '1 TB SSD', '14.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-14/spd/dell-dc14250-laptop', 7898.00, GETDATE());
+```
+
+---
+
+### Notebook Dell Pro 14
+
+**Modelo:** PC14250 (SKU Dell cto*_pc14250_*)  
+**Fabricante:** Dell  
+**Série:** Pro 14
+
+#### Configuração 1 – R$ 7.899,00 (cto45_pc14250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto45_pc14250_bccx2 |
+| **Processador** | Intel® Core™ 5-120U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics para Intel® Core 5 120U |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 256 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto45_pc14250_bccx2', 'Dell', 'Pro 14', 'Intel Core 5-120U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '8 GB DDR5', '256 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto45_pc14250_bccx2', 7899.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 11.298,00 (cto07_pc14250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto07_pc14250_bccx2 |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto07_pc14250_bccx2', 'Dell', 'Pro 14', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto07_pc14250_bccx2', 11298.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 9.149,00 (cto15_pc14250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto15_pc14250_bccx2 |
+| **Processador** | Intel® Core™ Ultra 5 235U vPro®, 12 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 256 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto15_pc14250_bccx2', 'Dell', 'Pro 14', 'Intel Core Ultra 5 235U vPro, 12 nucleos', 'Windows 11 Pro', 'Intel Graphics', '8 GB DDR5', '256 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto15_pc14250_bccx2', 9149.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 10.899,00 (cto07_pc14250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto07_pc14250_bccx1 |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto07_pc14250_bccx1', 'Dell', 'Pro 14', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Home', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto07_pc14250_bccx1', 10899.00, GETDATE());
+```
+
+#### Configuração 5 – R$ 10.749,00 (cto15_pc14250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto15_pc14250_bccx1 |
+| **Processador** | Intel® Core™ Ultra 5 235U vPro®, 12 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto15_pc14250_bccx1', 'Dell', 'Pro 14', 'Intel Core Ultra 5 235U vPro, 12 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto15_pc14250_bccx1', 10749.00, GETDATE());
+```
+
+#### Configuração 6 – R$ 12.549,00 (cto17_pc14250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto17_pc14250_bccx1 |
+| **Processador** | Intel® Core™ Ultra 7 265U vPro®, 12 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto17_pc14250_bccx1', 'Dell', 'Pro 14', 'Intel Core Ultra 7 265U vPro, 12 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto17_pc14250_bccx1', 12549.00, GETDATE());
+```
+
+#### Configuração 7 – R$ 15.549,00 (cto17_pc14250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto17_pc14250_bccx2 |
+| **Processador** | Intel® Core™ Ultra 7 265U vPro®, 12 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto17_pc14250_bccx2', 'Dell', 'Pro 14', 'Intel Core Ultra 7 265U vPro, 12 nucleos', 'Windows 11 Pro', 'Intel Graphics', '32 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto17_pc14250_bccx2', 15549.00, GETDATE());
+```
+
+#### Configuração 8 – R$ 11.455,00 (cto07_pc14250_bccx2b1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto07_pc14250_bccx2b1 |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto07_pc14250_bccx2b1', 'Dell', 'Pro 14', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '14.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-14/spd/dell-pro-pc14250-laptop/cto07_pc14250_bccx2b1', 11455.00, GETDATE());
+```
+
+---
+
+### Notebook Dell Pro 15 Essential
+
+**Modelo:** PV15250 (SKU Dell brppv15250*)  
+**Fabricante:** Dell  
+**Série:** Pro 15 Essential
+
+#### Configuração 1 – R$ 9.299,00 (brppv15250wbtohxgg_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brppv15250wbtohxgg_x |
+| **Processador** | Intel® Core™ i7-1355U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® UHD Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 15.6" Full HD (1920x1080) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brppv15250wbtohxgg_x', 'Dell', 'Pro 15 Essential', 'Intel Core i7-1355U, 10 nucleos', 'Windows 11 Home', 'Intel UHD Graphics', '16 GB DDR5', '1 TB SSD', '15.6" Full HD (1920x1080) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250wbtohxgg_x', 9299.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 8.898,00 (brppv15250pbtohxgf_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brppv15250pbtohxgf_x |
+| **Processador** | Intel® Core™ i7-1355U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® UHD Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 15.6" Full HD (1920x1080) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brppv15250pbtohxgf_x', 'Dell', 'Pro 15 Essential', 'Intel Core i7-1355U, 10 nucleos', 'Windows 11 Pro', 'Intel UHD Graphics', '16 GB DDR5', '512 GB SSD', '15.6" Full HD (1920x1080) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250pbtohxgf_x', 8898.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 7.999,00 (brppv15250pbtohxgd_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brppv15250pbtohxgd_x |
+| **Processador** | Intel® Core™ i5-1334U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® UHD Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 15.6" Full HD (1920x1080) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brppv15250pbtohxgd_x', 'Dell', 'Pro 15 Essential', 'Intel Core i5-1334U, 10 nucleos', 'Windows 11 Pro', 'Intel UHD Graphics', '16 GB DDR5', '512 GB SSD', '15.6" Full HD (1920x1080) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250pbtohxgd_x', 7999.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 8.499,00 (brppv15250wbtohxgf_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brppv15250wbtohxgf_x |
+| **Processador** | Intel® Core™ i7-1355U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® UHD Graphics |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 15.6" Full HD (1920x1080) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brppv15250wbtohxgf_x', 'Dell', 'Pro 15 Essential', 'Intel Core i7-1355U, 10 nucleos', 'Windows 11 Home', 'Intel UHD Graphics', '16 GB DDR5', '512 GB SSD', '15.6" Full HD (1920x1080) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250wbtohxgf_x', 8499.00, GETDATE());
+```
+
+#### Configuração 5 – R$ 6.898,00 (brppv15250pbtohxgc_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brppv15250pbtohxgc_x |
+| **Processador** | Intel® Core™ i5-1334U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® UHD Graphics |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 15.6" Full HD (1920x1080) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brppv15250pbtohxgc_x', 'Dell', 'Pro 15 Essential', 'Intel Core i5-1334U, 10 nucleos', 'Windows 11 Pro', 'Intel UHD Graphics', '8 GB DDR5', '512 GB SSD', '15.6" Full HD (1920x1080) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250pbtohxgc_x', 6898.00, GETDATE());
+```
+
+#### Configuração 6 – R$ 5.796,00 (brppv15250wbtohxgh_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brppv15250wbtohxgh_x |
+| **Processador** | Intel® Core™ 3-100U, 6 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® UHD Graphics |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 15.6" Full HD (1920x1080) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brppv15250wbtohxgh_x', 'Dell', 'Pro 15 Essential', 'Intel Core 3-100U, 6 nucleos', 'Windows 11 Home', 'Intel UHD Graphics', '8 GB DDR5', '512 GB SSD', '15.6" Full HD (1920x1080) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-15-essential/spd/dell-pro-pv15250-laptop/brppv15250wbtohxgh_x', 5796.00, GETDATE());
+```
+
+---
+
+### Notebook Dell 16 (Intel)
+
+**Modelo:** DC16250 (SKU Dell brpdc16250*)  
+**Fabricante:** Dell  
+**Série:** Notebook 16
+
+#### Configuração 1 – R$ 6.699,00 (brpdc16250hbtohsfn_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250hbtohsfn_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250hbtohsfn_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Home', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250hbtohsfn_x', 6699.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 7.198,00 (brpdc16250hbtohsfh_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250hbtohsfh_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250hbtohsfh_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Home', 'Intel Graphics', '16 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250hbtohsfh_x', 7198.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 8.499,00 (brpdc16250hbtohtqt_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250hbtohtqt_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250hbtohtqt_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Home', 'Intel Graphics', '32 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250hbtohtqt_x', 8499.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 7.599,00 (brpdc16250pbtohsfh_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250pbtohsfh_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250pbtohsfh_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250pbtohsfh_x', 7599.00, GETDATE());
+```
+
+#### Configuração 5 – R$ 7.098,00 (brpdc16250pbtohsfn_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250pbtohsfn_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250pbtohsfn_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250pbtohsfn_x', 7098.00, GETDATE());
+```
+
+#### Configuração 6 – R$ 8.898,00 (brpdc16250pbtohtqt_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250pbtohtqt_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250pbtohtqt_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Windows 11 Pro', 'Intel Graphics', '32 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250pbtohtqt_x', 8898.00, GETDATE());
+```
+
+#### Configuração 7 – R$ 6.398,00 (brpdc16250ubtohsfn_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250ubtohsfn_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250ubtohsfn_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'Intel Graphics', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250ubtohsfn_x', 6398.00, GETDATE());
+```
+
+#### Configuração 8 – R$ 8.199,00 (brpdc16250ubtohtqt_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250ubtohtqt_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250ubtohtqt_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'Intel Graphics', '32 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250ubtohtqt_x', 8199.00, GETDATE());
+```
+
+#### Configuração 9 – R$ 6.898,00 (brpdc16250ubtohsfh_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16250ubtohsfh_x |
+| **Processador** | Intel® Core™ 7-150U, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | Intel® Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920X1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16250ubtohsfh_x', 'Dell', 'Notebook 16', 'Intel Core 7-150U, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'Intel Graphics', '16 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920X1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16250-laptop/brpdc16250ubtohsfh_x', 6898.00, GETDATE());
+```
+
+---
+
+### Notebook Dell 16 (AMD Ryzen)
+
+**Modelo:** DC16255 (SKU Dell brpdc16255*)  
+**Fabricante:** Dell  
+**Série:** Notebook 16
+
+#### Configuração 1 – R$ 7.199,00 (brpdc16255hbtohwbm_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16255hbtohwbm_x |
+| **Processador** | AMD Ryzen™ 7 250 |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | AMD Radeon™ Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16255hbtohwbm_x', 'Dell', 'Notebook 16', 'AMD Ryzen 7 250', 'Windows 11 Home', 'AMD Radeon Graphics', '16 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16255-laptop', 7199.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 7.599,00 (brpdc16255pbtohwbm_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16255pbtohwbm_x |
+| **Processador** | AMD Ryzen™ 7 250 |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | AMD Radeon™ Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16255pbtohwbm_x', 'Dell', 'Notebook 16', 'AMD Ryzen 7 250', 'Windows 11 Pro', 'AMD Radeon Graphics', '16 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16255-laptop', 7599.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 7.098,00 (brpdc16255pbtohwbn_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16255pbtohwbn_x |
+| **Processador** | AMD Ryzen™ 7 250 |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | AMD Radeon™ Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16255pbtohwbn_x', 'Dell', 'Notebook 16', 'AMD Ryzen 7 250', 'Windows 11 Pro', 'AMD Radeon Graphics', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16255-laptop', 7098.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 6.397,00 (brpdc16255ubtohwbn_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpdc16255ubtohwbn_x |
+| **Processador** | AMD Ryzen™ 7 250 |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | AMD Radeon™ Graphics (integrada) |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) WVA |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpdc16255ubtohwbn_x', 'Dell', 'Notebook 16', 'AMD Ryzen 7 250', 'Ubuntu Linux 24.04 LTS', 'AMD Radeon Graphics', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) WVA', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-16/spd/dell-dc16255-laptop', 6397.00, GETDATE());
+```
+
+---
+
+### Notebook Dell Latitude 5455
+
+**Modelo:** L5455 (SKU Dell cto08l5455*)  
+**Fabricante:** Dell  
+**Série:** Latitude 5455
+
+#### Configuração 1 – R$ 9.998,00 (cto08l5455bccx)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto08l5455bccx |
+| **Processador** | Snapdragon® X Plus X1P-42-100 |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | Qualcomm® Snapdragon® X Plus (integrada) |
+| **Memória** | 16 GB LPDDR5X |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 14.0" Full HD+ (1920x1080) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto08l5455bccx', 'Dell', 'Latitude 5455', 'Snapdragon X Plus X1P-42-100', 'Windows 11 Pro', 'Qualcomm Snapdragon X Plus', '16 GB LPDDR5X', '512 GB SSD', '14.0" Full HD+ (1920x1080)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-latitude-5455/spd/latitude-14-5455-laptop/cto08l5455bccx', 9998.00, GETDATE());
+```
+
+---
+
+### Notebook Dell Pro Max 16
+
+**Modelo:** MC16250 (SKU Dell xcto*_mc16250_*)  
+**Fabricante:** Dell  
+**Série:** Pro Max 16
+
+#### Configuração 1 – R$ 17.648,00 (xcto07_mc16250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto07_mc16250_bccx1 |
+| **Processador** | Intel® Core™ Ultra 7 265H vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX PRO 500 Blackwell 6 GB GDDR6 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) LCD |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto07_mc16250_bccx1', 'Dell', 'Pro Max 16', 'Intel Core Ultra 7 265H vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 500 Blackwell 6GB', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) LCD', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16250-laptop', 17648.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 25.549,00 (xcto09_mc16250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto09_mc16250_bccx1 |
+| **Processador** | Intel® Core™ Ultra 9 285H vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 1000 Blackwell |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) LCD |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto09_mc16250_bccx1', 'Dell', 'Pro Max 16', 'Intel Core Ultra 9 285H vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 1000 Blackwell', '32 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) LCD', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16250-laptop', 25549.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 38.348,00 (xcto09_mc16250_bccx3)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto09_mc16250_bccx3 |
+| **Processador** | Intel® Core™ Ultra 9 285H vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX PRO 2000 Blackwell 8 GB GDDR6 |
+| **Memória** | 64 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) LCD |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto09_mc16250_bccx3', 'Dell', 'Pro Max 16', 'Intel Core Ultra 9 285H vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 2000 Blackwell 8GB', '64 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920x1200) LCD', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16250-laptop', 38348.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 29.649,00 (xcto09_mc16250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto09_mc16250_bccx2 |
+| **Processador** | Intel® Core™ Ultra 9 285H vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX PRO 2000 Blackwell 8 GB GDDR6 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) LCD |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto09_mc16250_bccx2', 'Dell', 'Pro Max 16', 'Intel Core Ultra 9 285H vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 2000 Blackwell 8GB', '32 GB DDR5', '1 TB SSD', '16.0" Full HD+ (1920x1200) LCD', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16250-laptop', 29649.00, GETDATE());
+```
+
+#### Configuração 5 – R$ 19.249,00 (xcto07_mc16250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto07_mc16250_bccx2 |
+| **Processador** | Intel® Core™ Ultra 7 265H vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 1000 Blackwell |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) LCD |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto07_mc16250_bccx2', 'Dell', 'Pro Max 16', 'Intel Core Ultra 7 265H vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 1000 Blackwell', '16 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) LCD', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16250-laptop', 19249.00, GETDATE());
+```
+
+#### Configuração 6 – R$ 31.500,00 (xcto07_mb16250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto07_mb16250_bccx2 |
+| **Processador** | Intel® Core™ Ultra 7 265HX vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 2000 Blackwell |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Touch Ultra HD+ (3840x2400) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto07_mb16250_bccx2', 'Dell', 'Pro Max 16 Plus', 'Intel Core Ultra 7 265HX vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 2000 Blackwell', '16 GB DDR5', '1 TB SSD', '16.0" Touch Ultra HD+ (3840x2400)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16-plus/spd/dell-pro-max-mb16250-laptop', 31500.00, GETDATE());
+```
+
+#### Configuração 7 – R$ 29.899,00 (xcto07_mb16250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto07_mb16250_bccx1 |
+| **Processador** | Intel® Core™ Ultra 7 265HX vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 2000 Blackwell |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Touch Ultra HD+ (3840x2400) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto07_mb16250_bccx1', 'Dell', 'Pro Max 16 Plus', 'Intel Core Ultra 7 265HX vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 2000 Blackwell', '16 GB DDR5', '512 GB SSD', '16.0" Touch Ultra HD+ (3840x2400)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16-plus/spd/dell-pro-max-mb16250-laptop', 29899.00, GETDATE());
+```
+
+#### Configuração 8 – R$ 46.998,00 (xcto09_mb16250_bccx2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto09_mb16250_bccx2 |
+| **Processador** | Intel® Core™ Ultra 9 285HX vPro® |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 3000 Blackwell |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 2 TB SSD |
+| **Tela** | 16.0" Touch Ultra HD+ (3840x2400) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto09_mb16250_bccx2', 'Dell', 'Pro Max 16 Plus', 'Intel Core Ultra 9 285HX vPro', 'Windows 11 Pro', 'NVIDIA RTX PRO 3000 Blackwell', '32 GB DDR5', '2 TB SSD', '16.0" Touch Ultra HD+ (3840x2400)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16-plus/spd/dell-pro-max-mb16250-laptop', 46998.00, GETDATE());
+```
+
+#### Configuração 9 – R$ 40.001,00 (xcto07_mb16250_bccx3)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto07_mb16250_bccx3 |
+| **Processador** | Intel® Core™ Ultra 7 265HX vPro®, 20 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 3000 Blackwell |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Touch Ultra HD+ (3840x2400) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto07_mb16250_bccx3', 'Dell', 'Pro Max 16 Plus', 'Intel Core Ultra 7 265HX vPro, 20 nucleos', 'Windows 11 Pro', 'NVIDIA RTX PRO 3000 Blackwell', '32 GB DDR5', '1 TB SSD', '16.0" Touch Ultra HD+ (3840x2400)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16-plus/spd/dell-pro-max-mb16250-laptop', 40001.00, GETDATE());
+```
+
+#### Configuração 10 – R$ 38.801,00 (xcto09_mb16250_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto09_mb16250_bccx1 |
+| **Processador** | Intel® Core™ Ultra 9 285HX vPro®, 24 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 2000 Blackwell |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Touch Ultra HD+ (3840x2400) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto09_mb16250_bccx1', 'Dell', 'Pro Max 16 Plus', 'Intel Core Ultra 9 285HX vPro, 24 nucleos', 'Windows 11 Pro', 'NVIDIA RTX PRO 2000 Blackwell', '32 GB DDR5', '1 TB SSD', '16.0" Touch Ultra HD+ (3840x2400)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16-plus/spd/dell-pro-max-mb16250-laptop', 38801.00, GETDATE());
+```
+
+#### Configuração 11 – R$ 50.000,00 (xcto09_mb16250_bccx3)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | xcto09_mb16250_bccx3 |
+| **Processador** | Intel® Core™ Ultra 9 285HX vPro®, 24 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® RTX™ PRO 3000 Blackwell |
+| **Memória** | 64 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" Touch Ultra HD+ (3840x2400) |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('xcto09_mb16250_bccx3', 'Dell', 'Pro Max 16 Plus', 'Intel Core Ultra 9 285HX vPro, 24 nucleos', 'Windows 11 Pro', 'NVIDIA RTX PRO 3000 Blackwell', '64 GB DDR5', '1 TB SSD', '16.0" Touch Ultra HD+ (3840x2400)', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-max-16-plus/spd/dell-pro-max-mb16250-laptop', 50000.00, GETDATE());
+```
+
+---
+
+### Notebook Gamer Alienware 16 Aurora
+
+**Modelo:** AC16250 (SKU Dell brpac16250*)  
+**Fabricante:** Dell  
+**Série:** Alienware 16 Aurora
+
+#### Configuração 1 – R$ 8.798,00 (brpac16250ubtohxxx_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohxxx_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohxxx_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8798.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 9.098,00 (brpac16250hbtohxxx_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohxxx_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohxxx_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9098.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 9.498,00 (brpac16250pbtohxxx_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250pbtohxxx_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250pbtohxxx_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Pro', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9498.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 9.699,00 (brpac16250pbtohsrf_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250pbtohsrf_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250pbtohsrf_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Pro', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9699.00, GETDATE());
+```
+
+---
+
+### Notebook Dell Pro 16
+
+**Modelo:** PC16255 (SKU Dell cto*_pc16255_*)  
+**Fabricante:** Dell  
+**Série:** Pro 16
+
+#### Configuração 1 – R$ 10.448,00 (cto07_pc16255_bccx1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | cto07_pc16255_bccx1 |
+| **Processador** | AMD Ryzen™ 7 PRO 250, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | AMD Radeon™ Graphics (integrada) |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" Full HD+ (1920x1200) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('cto07_pc16255_bccx1', 'Dell', 'Pro 16', 'AMD Ryzen 7 PRO 250, 8 nucleos', 'Windows 11 Pro', 'AMD Radeon Graphics', '8 GB DDR5', '512 GB SSD', '16.0" Full HD+ (1920x1200) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-dell-pro-16/spd/dell-pro-pc16255-laptop', 10448.00, GETDATE());
+```
+
+---
+
+## Resumo dos Modelos Catalogados
+
+| SKU | Modelo | Processador | Memória | Armazenamento | SO |
+|-----|--------|-------------|---------|---------------|-----|
+| brpdc14250ubtohtrj_x | Dell 14 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Ubuntu Linux 22.04 LTS |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohtky_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '32 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 10999.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 8.099,00 (brpac16250hbtohsrg_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrg_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrg_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8099.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 9.298,00 (brpac16250hbtohsrf_x3)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrf_x3 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrf_x3', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9298.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 8.200,00 (brpac16250ubtohsrg_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrg_x2 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrg_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8200.00, GETDATE());
+```
+
+#### Configuração 5 – R$ 7.698,00 (brpac16250pbtohsqy_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250pbtohsqy_x |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250pbtohsqy_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Pro', 'NVIDIA GeForce RTX 3050', '8 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 7698.00, GETDATE());
+```
+
+#### Configuração 6 – R$ 8.399,00 (brpac16250pbtohzsb_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250pbtohzsb_x |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250pbtohzsb_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Pro', 'NVIDIA GeForce RTX 4050', '8 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8399.00, GETDATE());
+```
+
+#### Configuração 7 – R$ 9.998,00 (brpac16250hbtohsrc_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrc_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrc_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 5050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9998.00, GETDATE());
+```
+
+#### Configuração 8 – R$ 8.200,00 (brpac16250ubtohsrg_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrg_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrg_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8200.00, GETDATE());
+```
+
+#### Configuração 9 – R$ 9.699,00 (brpac16250ubtohsrc_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrc_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrc_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 5050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9699.00, GETDATE());
+```
+
+#### Configuração 10 – R$ 9.298,00 (brpac16250hbtohsrf_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrf_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrf_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9298.00, GETDATE());
+```
+
+#### Configuração 11 – R$ 8.999,00 (brpac16250ubtohsrf_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrf_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrf_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8999.00, GETDATE());
+```
+
+#### Configuração 12 – R$ 8.699,00 (brpac16250pbtohsrg_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250pbtohsrg_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250pbtohsrg_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Pro', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8699.00, GETDATE());
+```
+
+#### Configuração 13 – R$ 7.598,00 (brpac16250hbtohsqz_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsqz_x |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsqz_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 7598.00, GETDATE());
+```
+
+#### Configuração 14 – R$ 8.298,00 (brpac16250ubtohsrb_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrb_x |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrb_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8298.00, GETDATE());
+```
+
+#### Configuração 15 – R$ 8.598,00 (brpac16250hbtohsrb_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrb_x |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrb_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8598.00, GETDATE());
+```
+
+#### Configuração 16 – R$ 8.099,00 (brpac16250pbtohsqz_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250pbtohsqz_x |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250pbtohsqz_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Pro', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8099.00, GETDATE());
+```
+
+#### Configuração 13 – R$ 10.699,00 (brpac16250ubtohtky_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohtky_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohtky_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '32 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 10699.00, GETDATE());
+```
+
+#### Configuração 14 – R$ 9.699,00 (brpac16250ubtohtkw_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohtkw_x |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohtkw_x', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 3050', '32 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9699.00, GETDATE());
+```
+
+#### Configuração 15 – R$ 8.999,00 (brpac16250ubtohsrf_x3)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrf_x3 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrf_x3', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8999.00, GETDATE());
+```
+
+#### Configuração 16 – R$ 9.699,00 (brpac16250ubtohsrc_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrc_x2 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrc_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 5050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9699.00, GETDATE());
+```
+
+#### Configuração 17 – R$ 11.199,00 (brpac16250ubtohsrh_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrh_x2 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5050 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrh_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 5050', '32 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 11199.00, GETDATE());
+```
+
+#### Configuração 18 – R$ 7.699,00 (brpac16250ubtohzsb_x1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohzsb_x1 |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohzsb_x1', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '8 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 7699.00, GETDATE());
+```
+
+#### Configuração 19 – R$ 7.998,00 (brpac16250hbtohzsb_x1)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohzsb_x1 |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 8 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohzsb_x1', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '8 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 7998.00, GETDATE());
+```
+
+#### Configuração 20 – R$ 9.998,00 (brpac16250hbtohsrc_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrc_x2 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrc_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 5050', '16 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 9998.00, GETDATE());
+```
+
+#### Configuração 21 – R$ 8.099,00 (brpac16250hbtohsrg_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrg_x2 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 3050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrg_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 3050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8099.00, GETDATE());
+```
+
+#### Configuração 22 – R$ 8.298,00 (brpac16250ubtohsrb_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250ubtohsrb_x2 |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Ubuntu Linux® 24.04 LTS |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250ubtohsrb_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Ubuntu Linux 24.04 LTS', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8298.00, GETDATE());
+```
+
+#### Configuração 23 – R$ 8.598,00 (brpac16250hbtohsrb_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrb_x2 |
+| **Processador** | Intel® Core™ 5-210H, 8 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 4050 |
+| **Memória** | 16 GB DDR5 |
+| **Armazenamento** | 512 GB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrb_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 5-210H, 8 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 4050', '16 GB DDR5', '512 GB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 8598.00, GETDATE());
+```
+
+#### Configuração 24 – R$ 11.499,00 (brpac16250hbtohsrh_x2)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpac16250hbtohsrh_x2 |
+| **Processador** | Intel® Core™ 7-240H, 10 núcleos |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5050 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpac16250hbtohsrh_x2', 'Dell', 'Alienware 16 Aurora', 'Intel Core 7-240H, 10 nucleos', 'Windows 11 Home', 'NVIDIA GeForce RTX 5050', '32 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-aurora/spd/alienware-ac16250-laptop', 11499.00, GETDATE());
+```
+
+---
+
+### Notebook Gamer Alienware 16 Area-51
+
+**Modelo:** AA16250 (SKU Dell brpaa16250*)  
+**Fabricante:** Dell  
+**Série:** Alienware 16 Area-51
+
+#### Configuração 1 – R$ 19.998,00 (brpaa16250pbtohtwz_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpaa16250pbtohtwz_x |
+| **Processador** | Intel® Core™ Ultra 9 275HX |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5070 |
+| **Memória** | 32 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpaa16250pbtohtwz_x', 'Dell', 'Alienware 16 Area-51', 'Intel Core Ultra 9 275HX', 'Windows 11 Pro', 'NVIDIA GeForce RTX 5070', '32 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-area-51/spd/alienware-aa16250-laptop', 19998.00, GETDATE());
+```
+
+#### Configuração 2 – R$ 23.998,00 (brpaa16250pbtohtxb_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpaa16250pbtohtxb_x |
+| **Processador** | Intel® Core™ Ultra 9 275HX |
+| **Sistema Operacional** | Windows 11 Pro |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5070 |
+| **Memória** | 64 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpaa16250pbtohtxb_x', 'Dell', 'Alienware 16 Area-51', 'Intel Core Ultra 9 275HX', 'Windows 11 Pro', 'NVIDIA GeForce RTX 5070', '64 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-area-51/spd/alienware-aa16250-laptop', 23998.00, GETDATE());
+```
+
+#### Configuração 3 – R$ 23.498,00 (brpaa16250hbtohtxb_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpaa16250hbtohtxb_x |
+| **Processador** | Intel® Core™ Ultra 9 275HX |
+| **Sistema Operacional** | Windows 11 Home |
+| **Placa de Vídeo** | NVIDIA® GeForce RTX™ 5070 |
+| **Memória** | 64 GB DDR5 |
+| **Armazenamento** | 1 TB SSD |
+| **Tela** | 16.0" 2.5K (2560x1600) IPS |
+
+```sql
+INSERT INTO ModeloNotebook (Sku, Fabricante, Serie, Processador, SistemaOperacional, PlacaVideo, Memoria, Armazenamento, Tela, UrlSpec, Preco, DataInclusao)
+VALUES ('brpaa16250hbtohtxb_x', 'Dell', 'Alienware 16 Area-51', 'Intel Core Ultra 9 275HX', 'Windows 11 Home', 'NVIDIA GeForce RTX 5070', '64 GB DDR5', '1 TB SSD', '16.0" 2.5K (2560x1600) IPS', 'https://www.dell.com/pt-br/shop/notebooks-dell/notebook-gamer-alienware-16-area-51/spd/alienware-aa16250-laptop', 23498.00, GETDATE());
+```
+
+#### Configuração 4 – R$ 19.498,00 (brpaa16250hbtohtwz_x)
+
+| Especificação | Valor |
+|--------------|-------|
+| **SKU** | brpaa16250hbtohtwz_x |
+| **Processador** | Intel® Core™ Ultra 9 275HX |
+| **Sistema Operacional** | Windows 11 Home |
+
+---
+
+## Resumo dos Modelos Catalogados
+
+| SKU | Modelo | Processador | Memória | Armazenamento | SO |
+|-----|--------|-------------|---------|---------------|-----|
+| brpdc14250ubtohtrj_x | Dell 14 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Ubuntu Linux 22.04 LTS |
+| brpdc14250hbtohtrj_x | Dell 14 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpdc14250pbtohtrj_x | Dell 14 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpdc14250pbtohtrk_x | Dell 14 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| cto45_pc14250_bccx2 | Dell Pro 14 | Intel Core 5-120U | 8 GB DDR5 | 256 GB SSD | Windows 11 Pro |
+| cto07_pc14250_bccx2 | Dell Pro 14 | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| cto15_pc14250_bccx2 | Dell Pro 14 | Intel Core Ultra 5 235U vPro | 8 GB DDR5 | 256 GB SSD | Windows 11 Pro |
+| cto07_pc14250_bccx1 | Dell Pro 14 | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| cto15_pc14250_bccx1 | Dell Pro 14 | Intel Core Ultra 5 235U vPro | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| cto17_pc14250_bccx1 | Dell Pro 14 | Intel Core Ultra 7 265U vPro | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| cto17_pc14250_bccx2 | Dell Pro 14 | Intel Core Ultra 7 265U vPro | 32 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| cto07_pc14250_bccx2b1 | Dell Pro 14 | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brppv15250wbtohxgg_x | Dell Pro 15 Essential | Intel Core i7-1355U | 16 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brppv15250pbtohxgf_x | Dell Pro 15 Essential | Intel Core i7-1355U | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brppv15250pbtohxgd_x | Dell Pro 15 Essential | Intel Core i5-1334U | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brppv15250wbtohxgf_x | Dell Pro 15 Essential | Intel Core i7-1355U | 16 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brppv15250pbtohxgc_x | Dell Pro 15 Essential | Intel Core i5-1334U | 8 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brppv15250wbtohxgh_x | Dell Pro 15 Essential | Intel Core 3-100U | 8 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpdc16250hbtohsfn_x | Dell 16 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpdc16250hbtohsfh_x | Dell 16 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brpdc16250hbtohtqt_x | Dell 16 (Intel) | Intel Core 7-150U | 32 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpdc16250pbtohsfh_x | Dell 16 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| brpdc16250pbtohsfn_x | Dell 16 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpdc16250pbtohtqt_x | Dell 16 (Intel) | Intel Core 7-150U | 32 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpdc16250ubtohsfn_x | Dell 16 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 512 GB SSD | Ubuntu Linux 24.04 LTS |
+| brpdc16250ubtohtqt_x | Dell 16 (Intel) | Intel Core 7-150U | 32 GB DDR5 | 512 GB SSD | Ubuntu Linux 24.04 LTS |
+| brpdc16250ubtohsfh_x | Dell 16 (Intel) | Intel Core 7-150U | 16 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpdc16255hbtohwbm_x | Dell 16 (AMD) | AMD Ryzen 7 250 | 16 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brpdc16255pbtohwbm_x | Dell 16 (AMD) | AMD Ryzen 7 250 | 16 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| brpdc16255pbtohwbn_x | Dell 16 (AMD) | AMD Ryzen 7 250 | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpdc16255ubtohwbn_x | Dell 16 (AMD) | AMD Ryzen 7 250 | 16 GB DDR5 | 512 GB SSD | Ubuntu Linux 24.04 LTS |
+| cto08l5455bccx | Dell Latitude 5455 | Snapdragon X Plus X1P-42-100 | 16 GB LPDDR5X | 512 GB SSD | Windows 11 Pro |
+| xcto07_mc16250_bccx1 | Dell Pro Max 16 | Intel Core Ultra 7 265H vPro | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| xcto09_mc16250_bccx1 | Dell Pro Max 16 | Intel Core Ultra 9 285H vPro | 32 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| xcto09_mc16250_bccx3 | Dell Pro Max 16 | Intel Core Ultra 9 285H vPro | 64 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| xcto09_mc16250_bccx2 | Dell Pro Max 16 | Intel Core Ultra 9 285H vPro | 32 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| xcto07_mc16250_bccx2 | Dell Pro Max 16 | Intel Core Ultra 7 265H vPro | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| xcto07_mb16250_bccx2 | Dell Pro Max 16 Plus | Intel Core Ultra 7 265HX vPro | 16 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| xcto07_mb16250_bccx1 | Dell Pro Max 16 Plus | Intel Core Ultra 7 265HX vPro | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| xcto09_mb16250_bccx2 | Dell Pro Max 16 Plus | Intel Core Ultra 9 285HX vPro | 32 GB DDR5 | 2 TB SSD | Windows 11 Pro |
+| xcto09_mb16250_bccx3 | Dell Pro Max 16 Plus | Intel Core Ultra 9 285HX vPro | 64 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| xcto07_mb16250_bccx3 | Dell Pro Max 16 Plus | Intel Core Ultra 7 265HX vPro, 20 nucleos | 32 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| xcto09_mb16250_bccx1 | Dell Pro Max 16 Plus | Intel Core Ultra 9 285HX vPro, 24 nucleos | 32 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| brpac16250ubtohxxx_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 512 GB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250hbtohxxx_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpac16250pbtohxxx_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpac16250pbtohsrf_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| brpac16250ubtohsrc_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250hbtohsrf_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brpac16250ubtohsrf_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250pbtohsrg_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpac16250ubtohtky_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 32 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250ubtohtkw_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 32 GB DDR5 | 512 GB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250ubtohsrf_x3 | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250ubtohsrc_x2 | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250pbtohsrb_x | Alienware 16 Aurora | Intel Core 5-210H, 8 nucleos | 16 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+| brpac16250hbtohtkw_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 32 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpac16250ubtohsrh_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 32 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250hbtohsrh_x | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 32 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brpac16250ubtohsrh_x2 | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 32 GB DDR5 | 1 TB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250ubtohzsb_x1 | Alienware 16 Aurora | Intel Core 5-210H, 8 nucleos | 8 GB DDR5 | 512 GB SSD | Ubuntu Linux 24.04 LTS |
+| brpac16250hbtohzsb_x1 | Alienware 16 Aurora | Intel Core 5-210H, 8 nucleos | 8 GB DDR5 | 512 GB SSD | Windows 11 Home |
+| brpac16250hbtohsrc_x2 | Alienware 16 Aurora | Intel Core 7-240H, 10 nucleos | 16 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brpaa16250pbtohtwz_x | Alienware 16 Area-51 | Intel Core Ultra 9 275HX | 32 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| brpaa16250pbtohtxb_x | Alienware 16 Area-51 | Intel Core Ultra 9 275HX | 64 GB DDR5 | 1 TB SSD | Windows 11 Pro |
+| brpaa16250hbtohtxb_x | Alienware 16 Area-51 | Intel Core Ultra 9 275HX | 64 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| brpaa16250hbtohtwz_x | Alienware 16 Area-51 | Intel Core Ultra 9 275HX | 32 GB DDR5 | 1 TB SSD | Windows 11 Home |
+| cto07_pc16255_bccx1 | Dell Pro 16 | AMD Ryzen 7 PRO 250, 8 nucleos | 8 GB DDR5 | 512 GB SSD | Windows 11 Pro |
+
+---
+*Catálogo atualizado em: Abril/2026*
