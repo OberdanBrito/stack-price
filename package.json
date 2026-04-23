@@ -9,12 +9,16 @@
     "scrape:dry": "node index.js --all --dry-run"
   },
   "dependencies": {
-    "playwright": "^1.42.0",
-    "mssql": "^10.0.0",
+    "commander": "^12.0.0",
     "dotenv": "^16.4.0",
-    "commander": "^12.0.0"
+    "mssql": "^10.0.0",
+    "playwright": "^1.42.0"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
   }
 }

@@ -83,7 +83,7 @@ CREATE TABLE ModeloNotebook (
 );
 ```
 
-## 6.1 ModeloNotebookPrecoHistorico (auditoria de custos)
+## 6.2 ModeloNotebookPrecoHistorico (auditoria de custos)
 ```sql
 CREATE TABLE ModeloNotebookPrecoHistorico (
     Id INT IDENTITY PRIMARY KEY,

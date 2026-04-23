@@ -90,9 +90,9 @@ async function main() {
       try {
         scrapers[fabricante] = ScraperFactory.create(fabricante, { headless: !options.headed });
         await scrapers[fabricante].init();
-        console.log(`✅ Scraper para ${fabricante} inicializado`);
+        console.log(`     Scraper para ${fabricante} inicializado`);
       } catch (error) {
-        console.log(`❌ Erro ao inicializar scraper ${fabricante}: ${error.message}`);
+        console.log(`     Erro ao inicializar scraper ${fabricante}: ${error.message}`);
       }
     }
 
@@ -130,10 +130,18 @@ async function main() {
           const resultado = await scraper.scrapeUrl(modelo.UrlSpec, modelo.Sku);
           
           if (resultado.error) {
-            console.log(`  ❌ Erro: ${resultado.error}`);
+            const mensagem = resultado.errorMessage || resultado.error;
+            console.log(`     Erro: ${mensagem}`);
+            if (!options.dryRun) {
+              await modeloNotebook.updateMotivoFalha(modelo.Sku, mensagem);
+            }
             resultados.erro++;
-            resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'erro', error: resultado.error });
+            resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'erro', error: mensagem, errorCode: resultado.errorCode });
             continue;
+          }
+
+          if (!options.dryRun) {
+            await modeloNotebook.updateVerificacao(modelo.Sku);
           }
 
           const precoEncontrado = PriceExtractor.matchConfigToSku(
@@ -142,23 +150,32 @@ async function main() {
           );
 
           if (precoEncontrado === null) {
-            console.log(`  ⚠️  Preço não encontrado na página`);
-            resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'preco_nao_encontrado' });
+            let motivo = 'Preço não encontrado';
+            if (resultado.configs && resultado.configs.length === 0) {
+              motivo = 'Seletor de preço não encontrado (estrutura da página pode ter mudado)';
+            } else {
+              motivo = 'Configurações encontradas mas preço não extraído (campo pode ter mudado)';
+            }
+            console.log(`     ${motivo}`);
+            if (!options.dryRun) {
+              await modeloNotebook.updateMotivoFalha(modelo.Sku, motivo);
+            }
+            resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'preco_nao_encontrado', motivo });
             continue;
           }
 
-          console.log(`  💰 Preço: R$ ${precoEncontrado.toFixed(2)} (atual: R$ ${modelo.Preco ? modelo.Preco.toFixed(2) : 'N/A'})`);
+          console.log(`    Preço: R$ ${precoEncontrado.toFixed(2)} (atual: R$ ${modelo.Preco ? modelo.Preco.toFixed(2) : 'N/A'})`);
 
           if (!options.dryRun) {
             const atualizado = await modeloNotebook.updatePreco(modelo.Sku, precoEncontrado);
             if (atualizado) {
-              console.log(`  ✅ Atualizado`);
+              console.log(`     Atualizado`);
               resultados.atualizados++;
             } else {
-              console.log(`  ⚠️  Sem alteração`);
+              console.log(`     Preço inalterado`);
             }
           } else {
-            console.log(`  🔄 [DRY-RUN]`);
+            console.log(`       [DRY-RUN]`);
           }
 
           resultados.sucesso++;
@@ -171,7 +188,7 @@ async function main() {
           });
 
         } catch (error) {
-          console.log(`  ❌ Erro: ${error.message}`);
+          console.log(`     Erro: ${error.message}`);
           resultados.erro++;
           resultados.detalhes.push({ sku: modelo.Sku, fabricante, status: 'erro', error: error.message });
         }

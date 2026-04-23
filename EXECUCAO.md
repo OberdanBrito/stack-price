@@ -168,28 +168,28 @@ node index.js --all
 [1/4] Testando brpdc14250ubtohtrj_x
    URL: https://www.dell.com/pt-br/shop/...
    Preço atual no BD: R$ 6698.00
-   ✅ Página carregada
+   Página carregada
    Configurações encontradas: 1
-   💰 Preço match: R$ 6999.00
-   ⚠️  Diferença de preço: R$ 301.00
+   Preço match: R$ 6999.00
+   Diferença de preço: R$ 301.00
 ```
 
 **Significado**:
-- `✅ Página carregada`: URL acessível
-- `💰 Preço match`: Preço encontrado na página
-- `⚠️ Diferença`: Preço mudou desde última atualização
+- `Página carregada`: URL acessível
+- `Preço match`: Preço encontrado na página
+- `Diferença de preço`: Preço mudou desde última atualização
 
 ### Execução Real (index.js)
 
 ```
 [1/142] Processando brpdc14250ubtohtrj_x...
-  💰 Preço encontrado: R$ 6999.00
+  Preço encontrado: R$ 6999.00
      Preço atual: R$ 6698.00
-  ✅ Preço atualizado no banco
+  Preço atualizado no banco
 ```
 
 **Significado**:
-- `✅ Preço atualizado`: UPDATE executado com sucesso
+- `Preço atualizado no banco`: UPDATE executado com sucesso
 - Trigger SQL `TRG_FechaPrecoAnterior` registra automaticamente no histórico
 
 ## Logs e Artefatos
@@ -215,7 +215,7 @@ cat logs/html/brpdc14250ubtohtrj_x-*.html | grep -i "price"
 ### Timeout na página Dell
 
 ```
-❌ Erro no scraping: page.goto: Timeout 30000ms exceeded.
+Erro no scraping: page.goto: Timeout 30000ms exceeded.
 ```
 
 **Solução**: Normal em horários de pico. O scraper já ajustou para 60s. Aguardar e tentar novamente.
@@ -223,7 +223,7 @@ cat logs/html/brpdc14250ubtohtrj_x-*.html | grep -i "price"
 ### Preço não encontrado
 
 ```
-⚠️  Preço não encontrado para este SKU
+Preço não encontrado para este SKU
 ```
 
 **Possíveis causas**:
